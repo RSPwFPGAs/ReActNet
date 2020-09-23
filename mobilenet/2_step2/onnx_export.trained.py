@@ -39,7 +39,7 @@ model.load_state_dict(new_state_dict)
 
 
 dummy_input = torch.rand(1, 3, 416, 416)
-onnx_path = "onnx_reactnet.trained.onnx"
+onnx_path = "onnx_reactnet.2_step2.trained.onnx"
 torch.onnx.export(model, dummy_input, onnx_path)
  
 
